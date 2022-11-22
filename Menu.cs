@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EditorHtml
 {
@@ -24,17 +22,17 @@ namespace EditorHtml
         {
             Console.Write("+");
 
-            for (int i = 0; i <= 30; i++)       
+            for (int i = 0; i <= 30; i++)
                 Console.Write("-");
 
             Console.Write("+");
             Console.Write("\n");
-            
-            
+
+
             for (int lines = 0; lines <= 10; lines++)
             {
                 Console.Write("|");
-                for (int i = 0; i <= 30 ; i++)
+                for (int i = 0; i <= 30; i++)
                     Console.Write(" ");
 
                 Console.Write("|");
@@ -52,7 +50,7 @@ namespace EditorHtml
 
         public static void WriteOptions()
         {
-            Console.SetCursorPosition(3,2);
+            Console.SetCursorPosition(3, 2);
             Console.Write("Editor HTML");
             Console.SetCursorPosition(3, 3);
             Console.WriteLine("==============");
@@ -73,7 +71,7 @@ namespace EditorHtml
             switch (option)
             {
                 case 1:
-                    Console.WriteLine("Editor");
+                    Editor.Show();
                     break;
                 case 2:
                     Console.WriteLine("View");
